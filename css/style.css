@@ -1,0 +1,87 @@
+html, body {
+    width: 100%;
+    background-color: lightgrey;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.jumbotron {
+    background-image: url(/img/me.jpg);
+    height: 600px;
+    background-position-y: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    border-radius: 0;
+    
+}
+
+ul{
+    width: 300px;
+}
+
+.shortAbout {
+    background-color: rgba(211, 211, 211, 0.6);
+    display: flex;
+    padding:10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.socialMedia {
+    border: none;
+    background-color: lightgrey;
+    padding: 0;
+    display: fe;
+    justify-content: center;
+    width: 200px
+}
+
+i {
+    margin: 10px;
+    z-index: 3;
+    font-size: 2em
+}
+
+
+.flex-container-teaser {
+    direction: rtl;
+}
+
+.list-group{
+    background-color: rgba(240, 248, 255, 0.5);
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.fab, .fas{
+    vertical-align: -20%
+}
+
+.knowledgeChild{
+    margin-left: 45px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .row {
+      justify-content: flex-start;
+      margin-right: 10%; 
+    }
+  }
+
+@media screen and (max-width: 620px) {
+    .row {
+      justify-content: center
+    }
+  }
+
+  
