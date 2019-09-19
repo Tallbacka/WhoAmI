@@ -17,6 +17,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2f245fa161.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
@@ -27,7 +28,6 @@
 	<div class="jumbotron text-center">
 		<div class="row flex-container-teaser">
 			<div class="flex-container">
-				<!-- <h1 style="width: 300px">Jimmy Johansson</h1> -->
 				<div class="shortAbout">
 					<p style="direction: ltr">
 						<strong> Sena nätter, fru som blir galen på dig för du sitter uppe på kvällarna,
@@ -53,13 +53,15 @@
 			<h3>Arbetslivserfarenhet</h3>
 			<p>Jag är en Inredningssnickare, CNC-operatör, CAM-beredare och konstruktör.
 				Allt i ett hårt paket! <br>(<em> För det vill väl alla ha! </em>) <br><br>
-				Till detta lägger jag nu att jag vill bli en <strong>Webbutvecklare</strong>. <br><br> Jag har under ca 2 år hobbyprogrammerat
-				på min fritid mestadels inom <strong>C#</strong>  och lite med <strong>SQL-skript</strong>.<br><br>
-				Detta har inte min arbetsgivare missat så jag har fått några mindre uppdrag igenom mitt nuvarande arbete.
-				Där jag skapat appar som bla. läser av dokument, och som kommuniserar med databaser, dvs. flyttar information
+				Till detta lägger jag nu att jag vill bli en <strong>Webbutvecklare</strong>. <br><br> Jag har under ca
+				2 år hobbyprogrammerat
+				på min fritid mestadels inom <strong>C#</strong> och lite med <strong>SQL-skript</strong>.<br><br>
+				Detta har inte min arbetsgivare missat så jag har fått några mindre uppdrag igenom mitt nuvarande
+				arbete.
+				Där jag skapat appar som bla. läser av dokument, och som kommuniserar med databaser.
 				<br><br>
-				Detta var lite kort om vad jag arbetat med, min livserfarenhet!
-				
+				I all enkelhet, detta är min nuvarande erfarenhet!
+
 			</p>
 		</div>
 		<div class="col-sm-4 knowledge">
@@ -116,12 +118,12 @@
 							style="color: #3c7259"></i></a></li>
 		</div>
 	</div>
-	<div class="row">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4554.39199947503!2d13.964437004998748!3d57.929858108798946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465a67194ce7b5af%3A0xce2f2e79ddb37519!2sHammarv%C3%A4gen%208%2C%20566%2091%20Habo!5e0!3m2!1ssv!2sse!4v1568827303744!5m2!1ssv!2sse"
-			width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="col-sm-12">
-		</iframe>
-	</div>
+	<div id="map"></div>
+
+
+	<script src="scripts/script.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXoktJ4NGVFwy52MuWTQMyNoNJzmIU3ck&callback=initMap"></script>
 </body>
 
 </html>
