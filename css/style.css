@@ -13,6 +13,7 @@ html, body {
     background-size: cover;
     opacity: .7;
     border-radius: 0;
+    padding-right: 10%;
     
 }
 
@@ -34,13 +35,13 @@ ul{
     padding: 0;
     display: fe;
     justify-content: center;
-    width: 200px
+    width: 200px;
 }
 
 i {
     margin: 10px;
     z-index: 3;
-    font-size: 2em
+    font-size: 2em;
 }
 
 
@@ -52,7 +53,12 @@ i {
     background-color: rgba(240, 248, 255, 0.5);
     margin-top: 5px;
     border-radius: 5px;
-    display: flex
+    display: flex;
+}
+
+
+.knowledge{
+    margin-bottom: 50px;
 }
 
 .about{
@@ -65,22 +71,42 @@ i {
     vertical-align: -20%
 }
 
-.knowledgeChild{
-    margin-left: 45px;
+.progress{
+    margin-top: -5%;
+    width: 80%;
+    margin-left: 3%;
 }
 
+.html{
+    background-color: orangered;
+}
+.css{
+    background-color: blue;
+}
+.js{
+    background-color: darkorange;
+}
+.cSharp{
+    background-color: rgb(168, 43, 168);
+}
+.sql{
+    background-color: black;
+}
 
 
 @media screen and (min-width: 1000px) {
     .row {
       justify-content: flex-start;
-      margin-right: 10%; 
     }
   }
 
 @media screen and (max-width: 620px) {
     .row {
       justify-content: center
+    }
+    .jumbotron{
+        justify-content: center;
+        padding-right: 0%;
     }
   }
 
