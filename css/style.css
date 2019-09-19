@@ -14,7 +14,7 @@ html, body {
 
 /* Feature ala Bootstrap, to showoff important information, in this case me!! */
 .jumbotron {
-    background-image: url(/img/me.jpg);
+    background-image: url(img/me.jpg);
     background-position: center;
     height: 600px;
     background-position-y: 10%;
