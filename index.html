@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Who am I</title>
 
+	<!--Scriptlibraries -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -18,16 +19,21 @@
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2f245fa161.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	
+	<!--Stylesheets-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png?v1">
 </head>
 
 <body>
+	<!-- Image_ShortContent about me -->
 	<div class="jumbotron text-center">
-		<div class="row flex-container-teaser">
-			<div class="flex-container">
+		<div class="flex-container-teaser">
+			<div>
 				<div class="shortAbout">
 					<p style="direction: ltr">
 						<strong> Sena nätter, fru som blir galen på dig för du sitter uppe på kvällarna,
@@ -41,13 +47,12 @@
 						<em> Så jag hoppas vi ses!</em> <br><br>
 						<small> PS. Jag har det väldigt bra hemma och <br> jag älskar min familj DS.</small>
 					</p>
-
 				</div>
-				</ul>
 			</div>
 		</div>
 	</div>
 
+	<!-- Divide into 3 sections using bootstrap "row"-->
 	<div class="row about">
 		<div class="col-sm-4">
 			<h3>Arbetslivserfarenhet</h3>
@@ -61,9 +66,10 @@
 				Där jag skapat appar som bla. läser av dokument, och som kommuniserar med databaser.
 				<br><br>
 				I all enkelhet, detta är min nuvarande erfarenhet!
-
 			</p>
 		</div>
+
+		<!-- My estimated knowledge showed off using fontawsome and a bootstrap progressbars-->
 		<div class="col-sm-4 knowledge">
 			<h3>Kunskap</h3>
 			<p><strong><i class="fab fa-html5" style="color: orangered"></i> HTML</strong></p>
@@ -94,9 +100,9 @@
 				<div class="progress-bar sql" role="progressbar" style="width: 30%;" aria-valuenow="25"
 					aria-valuemin="0" aria-valuemax="100">Här någonstans</div>
 			</div>
-
-
 		</div>
+
+		<!--Personal data, and socialmedia links-->
 		<div class="col-sm-4 personalInformation">
 			<h3>Personlig information</h3>
 			<p><strong>Namn</strong>: Jimmy Johansson</p>
@@ -118,12 +124,15 @@
 							style="color: #3c7259"></i></a></li>
 		</div>
 	</div>
+
+	<!-- inserting a Google map using JS. Added a marker with a small tag, to show where i live -->
 	<div id="map"></div>
 
 
 	<script src="scripts/script.js"></script>
 	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXoktJ4NGVFwy52MuWTQMyNoNJzmIU3ck&callback=initMap"></script>
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXoktJ4NGVFwy52MuWTQMyNoNJzmIU3ck&callback=initMap">
+	</script>
 </body>
 
 </html>

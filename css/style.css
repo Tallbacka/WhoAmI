@@ -1,11 +1,21 @@
+/* This section is one where i need to train quite abit to get everything 
+where i want it to be, any critics are most welcome.
+
+I presume there should be style attributes that i dont need in the code below, 
+but i dare not do anything more right now incase of meltdown :-) */
+
+
+/* Basic parent styling for the html page */
 html, body {
     width: 100%;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
 }
 
+/* Feature ala Bootstrap, to showoff important information, in this case me!! */
 .jumbotron {
     background-image: url(/img/me.jpg);
+    background-position: center;
     height: 600px;
     background-position-y: 10%;
     background-position: center;
@@ -32,7 +42,7 @@ ul {
     border: none;
     background-color: lightgrey;
     padding: 0;
-    justify-content:right;
+    justify-content: right;
     width: 200px;
 }
 
@@ -93,7 +103,8 @@ i {
     background-color: black;
 }
 
-#map{
+/* Basic style attributes regarding google maps */
+#map {
     height: 500px;
     width: 100%;
     margin-bottom: 10%;
@@ -103,28 +114,29 @@ i {
 }
 
 
+/* Applying media rules below, beware im still not getting the screen centered between some resolutions.
+But this will have to suffice for now.*/
 @media screen and (min-width: 1000px) {
     .row {
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 860px) {
     .row {
         justify-content: center;
         padding-right: 7%
     }
     .jumbotron {
         justify-content: center;
-        padding-right: 0;
     }
-    
-    .shortAbout{
-        margin-top: 10%;
+    .shortAbout {
+        margin-top: 0%;
     }
+}
 
-    .flex-container-teaser{
-        margin-right: %;
+@media screen and (max-width: 370px) {
+    .jumbotron {
+        padding-right: 3%
     }
-
 }
