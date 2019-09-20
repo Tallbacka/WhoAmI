@@ -7,34 +7,38 @@ but i dare not do anything more right now incase of meltdown :-) */
 
 /* Basic parent styling for the html page */
 html, body {
-    width: 100%;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
 }
 
 /* Feature ala Bootstrap, to showoff important information, in this case me!! */
 .jumbotron {
+    width: 100%;
     background-image: url(/img/me.jpg);
     background-position: center;
     height: 600px;
     background-position-y: 10%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .7;
     border-radius: 0;
-    padding-right: 10%;
-}
-
-ul {
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+    
 }
 
 .shortAbout {
     background-color: rgba(211, 211, 211, 0.6);
-    display: flex;
     padding: 15px;
     border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-left: 10%
+
+}
+
+ul {
     width: 300px;
 }
 
@@ -42,7 +46,7 @@ ul {
     border: none;
     background-color: lightgrey;
     padding: 0;
-    justify-content: right;
+    justify-content: left;
     width: 200px;
 }
 
@@ -52,8 +56,9 @@ i {
     font-size: 2em;
 }
 
-.flex-container-teaser {
-    direction: rtl;
+{
+
+    
 }
 
 .list-group {
@@ -63,14 +68,16 @@ i {
     display: flex;
 }
 
-.knowledge {
+.knowledge, .row {
     margin-bottom: 50px;
 }
 
 .about {
     display: flex;
-    justify-content: center;
-    margin-left: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    
 }
 
 .fab, .fas {
@@ -111,32 +118,43 @@ i {
     margin-top: 5%;
     opacity: .7;
     z-index: 0;
+    position: relative;
 }
 
-
-/* Applying media rules below, beware im still not getting the screen centered between some resolutions.
-But this will have to suffice for now.*/
-@media screen and (min-width: 1000px) {
-    .row {
-        justify-content: flex-end;
+/* smartphone portrait */
+@media only screen and( min-width: 300px){
+    .jumbotron{
+        width: 0%;
     }
+
 }
-
-@media screen and (max-width: 860px) {
-    .row {
-        justify-content: center;
-        padding-right: 7%
-    }
-    .jumbotron {
+/* smartphone landscapes */
+@media only screen and( min-width: 480px){
+    .jumbotron{
+        width: 0%;
         justify-content: center;
     }
-    .shortAbout {
-        margin-top: 0%;
+}
+/* tablets portrait */
+@media only screen and( min-width: 768px){
+    .jumbotron{
+        width: 0%;
+        justify-content: center;
+    }
+    .shortAbout{
+        margin-left: 0%
     }
 }
+/* Tablet landscape, desktop */
+@media only screen and( min-width: 1024px){
 
-@media screen and (max-width: 370px) {
+}
+
+@media only screen and( min-width: 1199px){
     .jumbotron {
-        padding-right: 3%
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+    
     }
 }
