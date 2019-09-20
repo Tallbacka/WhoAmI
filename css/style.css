@@ -6,14 +6,14 @@ but i dare not do anything more right now incase of meltdown :-) */
 
 
 /* Basic parent styling for the html page */
-html, body {
+body {
+    width: 100%;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
 }
 
 /* Feature ala Bootstrap, to showoff important information, in this case me!! */
 .jumbotron {
-    width: 100%;
     background-image: url(/img/me.jpg);
     background-position: center;
     height: 600px;
@@ -28,6 +28,7 @@ html, body {
     
 }
 
+/* div with some brief information about me */
 .shortAbout {
     background-color: rgba(211, 211, 211, 0.6);
     padding: 15px;
@@ -35,13 +36,9 @@ html, body {
     width: 300px;
     text-align: center;
     margin-left: 10%
-
 }
 
-ul {
-    width: 300px;
-}
-
+/* container for social media icons */
 .socialMedia {
     border: none;
     background-color: lightgrey;
@@ -50,17 +47,24 @@ ul {
     width: 200px;
 }
 
+/* list with social media icons */
+ul {
+    width: 300px;
+}
+
+/* FontAwsome attribues */
 i {
     margin: 10px;
     z-index: 3;
     font-size: 2em;
 }
 
-{
-
-    
+/* aligning FontAwsome icon */
+.fab, .fas {
+    vertical-align: -20%
 }
 
+/* List items for socialmedia icons */
 .list-group {
     background-color: rgba(240, 248, 255, 0.5);
     margin-top: 5px;
@@ -68,28 +72,26 @@ i {
     display: flex;
 }
 
-.knowledge, .row {
+/* div containers separated by using rowfrom bootstrap */
+.row {
     margin-bottom: 50px;
 }
 
+/* container for Curriculum Vitae */
 .about {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0;
-    
+    padding: 15px;
 }
 
-.fab, .fas {
-    vertical-align: -20%
-}
-
+/* aligning progress bars */
 .progress {
     margin-top: -4%;
     width: 80%;
     margin-left: 3%;
 }
 
+/* Setting colors on icons */
 .html {
     background-color: orangered;
 }
@@ -122,39 +124,47 @@ i {
 }
 
 /* smartphone portrait */
-@media only screen and( min-width: 300px){
+@media only screen and ( min-width: 300px){
     .jumbotron{
-        width: 0%;
-    }
-
-}
-/* smartphone landscapes */
-@media only screen and( min-width: 480px){
-    .jumbotron{
-        width: 0%;
-        justify-content: center;
-    }
-}
-/* tablets portrait */
-@media only screen and( min-width: 768px){
-    .jumbotron{
-        width: 0%;
         justify-content: center;
     }
     .shortAbout{
-        margin-left: 0%
+        margin-left:0%;
     }
 }
-/* Tablet landscape, desktop */
-@media only screen and( min-width: 1024px){
+/* smartphone landscapes */
+@media only screen and (min-width: 480px){
+    .jumbotron{
+        justify-content: center;
+    }
+    .shortAbout{
+        margin-left: 0%;
+    }
 
+    .about > div >h3{
+        font-size: 20px;
+    }
+}
+/* tablets portrait */
+@media only screen and (min-width: 768px){
+    .jumbotron{
+        justify-content: flex-end
+    }
+    
+}
+/* Tablet landscape, desktop */
+@media only screen and (min-width: 1024px){
+    .about > div >h3{
+        font-size: 30px;
+    }
 }
 
-@media only screen and( min-width: 1199px){
+/* Very large desktops */
+@media only screen and (min-width: 1199px){
     .jumbotron {
         display: flex;
-        justify-content: center;
-        margin-left: 0%;
-    
+    }
+    .shortAbout{
+        margin-right: 20%;
     }
 }
