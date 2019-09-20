@@ -26,7 +26,14 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end
-    
+}
+
+#nameHeader{
+    margin-top: -65px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left
 }
 
 /* div with some brief information about me */
@@ -36,7 +43,8 @@ html, body {
     border-radius: 5px;
     width: 300px;
     text-align: center;
-    margin-left: 10%
+    margin-left: 10%;
+    margin-top: -20px;
 }
 
 /* container for social media icons */
@@ -131,7 +139,7 @@ i {
 
 /* smartphone portrait */
 @media only screen and ( min-width: 300px){
-    .jumbotron{
+    .jumbotron, #nameHeader{
         justify-content: center;
     }
     .shortAbout{
@@ -143,9 +151,11 @@ i {
 }
 /* smartphone landscapes */
 @media only screen and (min-width: 480px){
-    .jumbotron{
+    .jumbotron, {
         justify-content: center;
     }
+
+
     .shortAbout{
         margin-left: 0%;
     }
@@ -163,6 +173,10 @@ i {
     .jumbotron{
         justify-content: flex-end
     }
+    #nameHeader{
+        justify-content: left;
+    }
+    
     
 }
 /* Tablet landscape, desktop */
