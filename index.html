@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Who am I</title>
 
-	<!--Scriptlibraries -->
+	<!--Script libraries -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2f245fa161.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	
+
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,25 +31,24 @@
 
 <body>
 	<!-- Image_ShortContent about me -->
-	<div class="jumbotron text-center">
-		<div class="flex-container-teaser">
-			<div>
-				<div class="shortAbout">
-					<p style="direction: ltr">
-						<strong> Sena nätter, fru som blir galen på dig för du sitter uppe på kvällarna,
-							barn som är trötta och vill ha uppmärksamhet.</strong>
-						<br><br>
-						Låter det bekant?
-						<br><br>
-						Till allt detta kommer att man skall börja studera?!? <br><br>
-						Låter ganska tokigt eller hur? Men detta är något som jag verkligen tycker är roligt
-						och det ger mig så mycket både i <br> stimulans och utveckling! <br><br>
-						<em> Så jag hoppas vi ses!</em> <br><br>
-						<small> PS. Jag har det väldigt bra hemma och <br> jag älskar min familj DS.</small>
-					</p>
-				</div>
-			</div>
+	<div class="jumbotron">
+		<div class="shortAbout">
+			<p>
+				<strong> Sena nätter, fru som blir galen på dig för du sitter uppe på kvällarna,
+					barn som är trötta och vill ha uppmärksamhet.</strong>
+				<br><br>
+				Låter det bekant?
+				<br><br>
+				Till allt detta kommer att man skall börja studera?!? <br><br>
+				Låter ganska tokigt eller hur? Men detta är något som jag verkligen tycker är roligt
+				och det ger mig så mycket både i <br> stimulans och utveckling! <br><br>
+				<em> Så jag hoppas vi ses!</em> <br><br>
+				<small> PS. Jag har det väldigt bra hemma och <br> jag älskar min familj DS.</small>
+			</p>
 		</div>
+	</div>
+	<div id="nameHeader">
+		<h3>Jimmy Johansson</h3>
 	</div>
 
 	<!-- Divide into 3 sections using bootstrap "row"-->
@@ -70,7 +69,7 @@
 		</div>
 
 		<!-- My estimated knowledge showed off using fontawsome and a bootstrap progressbars-->
-		<div class="col-sm-4 knowledge">
+		<div class="col-sm-4">
 			<h3>Kunskap</h3>
 			<p><strong><i class="fab fa-html5" style="color: orangered"></i> HTML</strong></p>
 			<div class="progress">
@@ -103,13 +102,13 @@
 		</div>
 
 		<!--Personal data, and socialmedia links-->
-		<div class="col-sm-4 personalInformation">
+		<div class="col-sm-4">
 			<h3>Personlig information</h3>
 			<p><strong>Namn</strong>: Jimmy Johansson</p>
 			<p><strong>Födelsedag</strong>: 1981/09/23</p>
 			<p><strong>Telefon</strong>: +46 705-21 16 17</p>
 			<p><strong>Adress</strong>: Hammarvägen 8, 56691, Habo</p>
-			<ul class="list-group list-group-horizontal" style="width: 300px">
+			<ul class="list-group list-group-horizontal">
 				<li class="list-group-item socialMedia"><a
 						href="https://www.linkedin.com/in/jimmy-johansson-365b47165/"><i class="fab fa-linkedin"
 							style="color: #0e76a8"></i></a></li>
@@ -128,11 +127,15 @@
 	<!-- inserting a Google map using JS. Added a marker with a small tag, to show where i live -->
 	<div id="map"></div>
 
-
+	<footer>
+		<p>Skapad av: Jimmy Johansson</p>
+		<p>Datum: 2019-09-20</p>
+		<time datetime="2019-09-20" pubdate="pubdate"></time>
+	</footer>
 	<script src="scripts/script.js"></script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXoktJ4NGVFwy52MuWTQMyNoNJzmIU3ck&callback=initMap">
-	</script>
+		</script>
 </body>
 
 </html>
