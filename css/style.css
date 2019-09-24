@@ -7,7 +7,7 @@ but i dare not do anything more right now incase of meltdown :-) */
 
 /* Basic parent styling for the html page */
 html, body {
-    width: 100%;
+    width: 100vw;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
     
@@ -78,14 +78,9 @@ i {
 .list-group {
     background-color: rgba(240, 248, 255, 0.5);
     margin-top: 5px;
-    border-radius: 5px;
     display: flex;
-    justify-content: space-evenly
-}
-
-/* div containers separated by using rowfrom bootstrap */
-.row {
-    margin-bottom: 50px;
+    justify-content: space-evenly;
+    width: 300px
 }
 
 /* container for Curriculum Vitae */
@@ -94,6 +89,7 @@ i {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
+    box-sizing: unset;
 }
 
 
@@ -126,12 +122,39 @@ i {
     background-color: black;
 }
 
+/* Briefcase styling */
+#containerBriefcase{
+
+}
+
+#navbarBriefcase{
+    width: 100vw;
+    justify-content: center;
+    border: 2px;
+    border-color: black;
+    margin-bottom: 8vh;
+}
+
+.navbar-toggler{
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    
+}
+
+.navbar-toggler{
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    
+}
+
 /* Basic style attributes regarding google maps */
 #map {
     height: 500px;
     width: 100%;
     margin-bottom: 10%;
-    margin-top: 5%;
+    
     opacity: .7;
     z-index: 0;
     position: relative;
