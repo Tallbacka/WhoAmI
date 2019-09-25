@@ -124,18 +124,32 @@
 		</div>
 	</div>
 
+	<!-- Portfolio data retrieved from Git -->
+	<nav id="navbarBriefcase" class="navbar navbar-expand-md=dark navbar-light border-top border-bottom border-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span>Portfolio</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav" id="listRepos">
+				<ul>
+		</div>
+	</nav>
+
 	<!-- inserting a Google map using JS. Added a marker with a small tag, to show where i live -->
 	<div id="map"></div>
+	<div id="repos">
+		<ul id=listContainer></ul>
+	</div>
 
 	<footer>
-		<p>Skapad av: Jimmy Johansson</p>
-		<p>Datum: 2019-09-20</p>
+		<p>Skapad av: Jimmy Johansson / 2019-09-20</p>
+		<p></p>
 		<time datetime="2019-09-20" pubdate="pubdate"></time>
 	</footer>
 	<script src="scripts/script.js"></script>
+	<script src="scripts/GitAPI.js"></script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXoktJ4NGVFwy52MuWTQMyNoNJzmIU3ck&callback=initMap">
 		</script>
 </body>
-
 </html>
