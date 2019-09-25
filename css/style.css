@@ -7,7 +7,7 @@ but i dare not do anything more right now incase of meltdown :-) */
 
 /* Basic parent styling for the html page */
 html, body {
-    width: 100vw;
+    width: 100%;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
     
@@ -80,7 +80,7 @@ i {
     margin-top: 5px;
     display: flex;
     justify-content: space-evenly;
-    width: 300px
+    width: 280px
 }
 
 /* container for Curriculum Vitae */
@@ -96,9 +96,10 @@ i {
 
 /* aligning progress bars */
 .progress {
-    margin-top: -4%;
+    margin-top: 1vh;
     width: 80%;
-    margin-left: 3%;
+    margin-left: 0.5vh;
+    margin-bottom: 2vh;
 }
 
 /* Setting colors on icons */
@@ -122,9 +123,10 @@ i {
     background-color: black;
 }
 
-/* Briefcase styling */
-#containerBriefcase{
-
+#listRepos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
 }
 
 #navbarBriefcase{
@@ -146,7 +148,10 @@ i {
     height: 50px;
     font-size: 30px;
     border: none;
-    
+}
+
+.avatarImg{
+    width: 5vw;
 }
 
 /* Basic style attributes regarding google maps */
@@ -174,7 +179,7 @@ i {
 }
 /* smartphone landscapes */
 @media only screen and (min-width: 480px){
-    .jumbotron, {
+    .jumbotron {
         justify-content: center;
     }
 
