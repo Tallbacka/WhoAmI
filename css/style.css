@@ -4,16 +4,17 @@ where i want it to be, any critics are most welcome.
 I presume there should be style attributes that i dont need in the code below, 
 but i dare not do anything more right now incase of meltdown :-) */
 
-
 /* Basic parent styling for the html page */
+
 html, body {
-    width: 100%;
+    overflow-x: hidden;
+    width: 100vw;
     background-color: lightgrey;
     font-family: 'Titillium Web', sans-serif;
-    
 }
 
 /* Feature ala Bootstrap, to showoff important information, in this case me!! */
+
 .jumbotron {
     background-image: url(../img/me.jpg);
     background-position: center;
@@ -28,7 +29,7 @@ html, body {
     justify-content: flex-end
 }
 
-#nameHeader{
+#nameHeader {
     margin-top: -65px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -37,6 +38,7 @@ html, body {
 }
 
 /* div with some brief information about me */
+
 .shortAbout {
     background-color: rgba(211, 211, 211, 0.6);
     padding: 15px;
@@ -48,6 +50,7 @@ html, body {
 }
 
 /* container for social media icons */
+
 .socialMedia {
     border: none;
     background-color: lightgrey;
@@ -57,11 +60,13 @@ html, body {
 }
 
 /* list with social media icons */
+
 ul {
     width: 150;
 }
 
 /* FontAwsome attribues */
+
 i {
     margin: 10px;
     z-index: 3;
@@ -69,32 +74,34 @@ i {
 }
 
 /* aligning FontAwsome icon */
+
 .fab, .fas {
     vertical-align: -20%
 }
 
-
 /* List items for socialmedia icons */
+
 .list-group {
     background-color: rgba(240, 248, 255, 0.5);
     margin-top: 5px;
     display: flex;
-    justify-content: space-evenly;
-    width: 280px
+    justify-content: left;
+    width: 30%;
 }
 
 /* container for Curriculum Vitae */
+
 .about {
-    width: 100%;
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    box-sizing: unset;
+    margin: 0;
 }
 
-
-
 /* aligning progress bars */
+
 .progress {
     margin-top: 1vh;
     width: 80%;
@@ -103,6 +110,7 @@ i {
 }
 
 /* Setting colors on icons */
+
 .html {
     background-color: orangered;
 }
@@ -123,13 +131,33 @@ i {
     background-color: black;
 }
 
-#listRepos{
+#listRepos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 3vh;
 }
 
-#navbarBriefcase{
+.repoListItems {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    border-color: black;
+    border: 3px;
+    border-radius: 3px;
+    background-color: rgba(240, 248, 255, 0.5);
+    width: 250px;
+    height: 80px;
+    margin: 5px;
+    padding: 3px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#navbarBriefcase {
     width: 100vw;
     justify-content: center;
     border: 2px;
@@ -137,89 +165,103 @@ i {
     margin-bottom: 8vh;
 }
 
-.navbar-toggler{
-    height: 50px;
-    font-size: 30px;
-    border: none;
+.pName {
+    margin-bottom: 0;
+}
+
+#pDescription {
+    font-size: 0.6em;
+    margin-bottom: 0;
+}
+.repoLink{
+    margin-top: auto;
+}
+
+.repoLogo {
+    margin: 0;
     
 }
 
-.navbar-toggler{
+.navbar-toggler {
     height: 50px;
     font-size: 30px;
     border: none;
 }
 
-.avatarImg{
-    width: 5vw;
+.navbar-toggler {
+    height: 50px;
+    font-size: 30px;
+    border: none;
 }
 
 /* Basic style attributes regarding google maps */
+
 #map {
     height: 500px;
     width: 100%;
     margin-bottom: 10%;
-    
     opacity: .7;
     z-index: 0;
     position: relative;
 }
 
 /* smartphone portrait */
-@media only screen and ( min-width: 300px){
-    .jumbotron, #nameHeader{
+
+@media only screen and ( min-width: 300px) {
+    .jumbotron, #nameHeader {
         justify-content: center;
     }
-    .shortAbout{
-        margin-left:0%;
+    .shortAbout {
+        margin-left: 0%;
     }
-    .col-sm-4{
+    .col-sm-4 {
         margin-bottom: 10%;
     }
 }
+
 /* smartphone landscapes */
-@media only screen and (min-width: 480px){
+
+@media only screen and (min-width: 480px) {
     .jumbotron {
         justify-content: center;
     }
-
-
-    .shortAbout{
+    .shortAbout {
         margin-left: 0%;
     }
-
-    .about > div >h3{
+    .about>div>h3 {
         font-size: 20px;
     }
-    .col-sm-4{
+    .col-sm-4 {
         margin-bottom: 0%;
     }
-    
 }
+
 /* tablets portrait */
-@media only screen and (min-width: 768px){
-    .jumbotron{
+
+@media only screen and (min-width: 768px) {
+    .jumbotron {
         justify-content: flex-end
     }
-    #nameHeader{
+    #nameHeader {
         justify-content: left;
     }
-    
-    
 }
+
 /* Tablet landscape, desktop */
-@media only screen and (min-width: 1024px){
-    .about > div >h3{
+
+@media only screen and (min-width: 1024px) {
+    .about>div>h3 {
         font-size: 30px;
     }
 }
 
 /* Very large desktops */
-@media only screen and (min-width: 1199px){
+
+@media only screen and (min-width: 1199px) {
     .jumbotron {
         display: flex;
     }
-    .shortAbout{
+    .shortAbout {
         margin-right: 20%;
     }
 }

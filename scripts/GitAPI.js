@@ -23,27 +23,34 @@ function drawRepoData(data) {
 
     for (let i = 0; i < Object.values(data).length; i++) {
         var pName = document.createElement('p');
+        var pDescription = document.createElement('p');
         var li = document.createElement('li');
         var a = document.createElement('a');
         var insert = document.createElement('i')
 
-        insert.setAttribute('class', "fab fa-github-square");
-
+        li.setAttribute('class', "repoListItems")
+        insert.setAttribute('class', "fab fa-github-square repoLogo");
+        insert.setAttribute('style', "color: black")
         a.setAttribute('href', data[i].html_url);
+        a.setAttribute('class', "repoLink")
         a.appendChild(insert);
 
-        pName.innerHTML = "Projektnamn: " + data[i].name + "<br>" + "Senast ändrad: " + data[i].updated_at;
-        pName.setAttribute = ("class", "paragraphName");
-        pName.insertAdjacentElement("afterbegin", a)
+        pDescription.innerHTML = data[i].description
+        pDescription.setAttribute('id', "pDescription")
+        pName.innerHTML = data[i].name
+        pName.setAttribute("class", "pName");
+
         li.appendChild(pName);
+        li.appendChild(pDescription);
+        li.appendChild(a);
+
         ul.appendChild(li);
     }
 }
 
 function convertAndSortDate(data) {
-    var dateJson = JSON.stringify(data[0].updated_at)
-    var date = new date(dateJson)
-
-    // data.sort(function (a, b) { return a.updated_at - b.updated_at });
-    console.log(date);
+    var lastUpdated = new Date(data[0].updated_at)
+    var output = lastUpdated.getDay() + "/" + lastUpdated.getMonth() + "/" + lastUpdated.getFullYear();
+    data.sort(function (a, b) { return a.updated_at - b.updated_at });
+    console.log(data);
 }
